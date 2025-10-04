@@ -8,62 +8,50 @@
 </head>
 <body>
   <!-- 상단바 -->
-  <header>
-    <div class="logo">
-      <img src="images/KMOU_logo.png" alt="KMOU 로고">
-      <img src="images/LCTC_logo.png" alt="LCTC 로고">
+  <header class="navbar">
+    <div class="logo-area">
+      <img src="images/KMOU_logo.png" alt="KMOU 로고" class="logo">
+      <img src="images/LCTC_logo.png" alt="LCTC 로고" class="logo">
     </div>
-    <h1>Lab of Combustion and Technology Convergence</h1>
-    <nav>
-      <a href="#">Home</a>
+    <h1 class="lab-name">Lab of Combustion and Technology Convergence</h1>
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
       <a href="#">Login</a>
       <a href="#">Join a lab</a>
     </nav>
   </header>
 
-  <!-- 메인 컨텐츠 -->
-  <div class="container">
-    <!-- 왼쪽 메뉴 -->
-    <aside class="sidebar">
-      <a href="#about">About</a>
-      <a href="#members">Members</a>
-      <a href="#research">Research</a>
-      <a href="#board">Board</a>
-    </aside>
+  <!-- 좌측 메뉴 -->
+  <aside class="side-menu">
+    <a href="about.html">About</a>
+    <a href="members.html">Members</a>
+    <a href="research.html">Research</a>
+    <a href="board.html">Board</a>
+  </aside>
 
-    <!-- 중앙 슬라이드쇼 -->
-    <main class="content">
+  <!-- 메인 컨텐츠 -->
+  <main>
+    <section class="hero">
       <div class="slideshow">
         <img src="images/s1.png" class="slide active" alt="Slide 1">
         <img src="images/s2.png" class="slide" alt="Slide 2">
         <img src="images/s3.png" class="slide" alt="Slide 3">
         <img src="images/s4.png" class="slide" alt="Slide 4">
       </div>
+    </section>
 
-      <!-- 소개글 작성 영역 -->
-      <section id="about">
-        <h2>About</h2>
-        <p>여기에 연구실 소개 문구가 들어갑니다.</p>
-      </section>
+    <!-- 소개글 구역 -->
+    <section class="intro">
+      <h2>연구실 소개</h2>
+      <p>
+        이곳에 연구실 소개글을 작성하세요.  
+        예: 저희 LCTC 연구실은 연소 및 에너지 시스템에 관한 실험적·이론적 연구를 수행하며,  
+        DC 전기장, 화재 안전, 가스터빈 연소, 신재생 에너지 분야의 다양한 프로젝트를 진행하고 있습니다.
+      </p>
+    </section>
+  </main>
 
-      <section id="members">
-        <h2>Members</h2>
-        <p>교수님, 대학원생, 학부생 소개</p>
-      </section>
-
-      <section id="research">
-        <h2>Research</h2>
-        <p>연구 분야 소개를 여기에 작성하세요.</p>
-      </section>
-
-      <section id="board">
-        <h2>Board</h2>
-        <p>공지사항, 세미나 일정, 자료실</p>
-      </section>
-    </main>
-  </div>
-
-  <!-- 푸터 -->
+  <!-- 하단 -->
   <footer>
     <hr>
     <p>Address: (49112) 부산광역시 영도구 태종로 727 (동삼동) 한국해양대학교</p>
