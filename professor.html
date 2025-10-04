@@ -1,13 +1,68 @@
-<main>
-  <h2>Supervisor</h2>
-  <hr>
-  <div class="profile-card">
-    <img src="images/YSH.png" alt="Professor YSH" class="profile-photo">
-    <div class="profile-info">
-      <h3>윤성환 (Sung Hwan Yoon)</h3>
-      <p>Professor, Dept. of Mechanical Engineering, KMOU</p>
-      <p>Email: shy@kmou.ac.kr</p>
-      <p>Research: Combustion, Fire Safety, Ionic Wind, EPS Fire Suppression</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCTC Lab - Professor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 상단바 -->
+  <header class="navbar">
+    <div class="logo-area">
+      <img src="images/KMOU_logo.png" alt="KMOU 로고" class="logo">
+      <img src="images/LCTC_logo.png" alt="LCTC 로고" class="logo">
     </div>
-  </div>
-</main>
+    <h1 class="lab-name">Lab of Combustion and Technology Convergence</h1>
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Join a lab</a>
+    </nav>
+  </header>
+
+  <!-- 좌측 메뉴 (드롭다운 동일) -->
+  <aside class="side-menu">
+    <a href="about.html">About</a>
+    <div class="dropdown">
+      <span class="menu-title">Members</span>
+      <div class="submenu">
+        <a href="professor.html">Professor</a>
+        <a href="students.html">Students</a>
+        <a href="onboarding.html">On boarding</a>
+        <a href="alumni.html">Alumni</a>
+      </div>
+    </div>
+    <a href="research.html">Research</a>
+    <a href="board.html">Board</a>
+  </aside>
+
+  <!-- 메인 -->
+  <main>
+    <h2 class="page-title">Supervisor</h2>
+    <hr class="section-hr">
+
+    <div class="profile-card">
+      <img src="images/YSH.png" alt="Professor YSH" class="profile-photo">
+      <div class="profile-info">
+        <h3>윤성환 (Sung Hwan Yoon)</h3>
+        <p>Professor, Dept. of Mechanical Engineering, KMOU</p>
+        <p>Email: <a href="mailto:shy@kmou.ac.kr">shy@kmou.ac.kr</a></p>
+        <p>Research: Combustion, Fire Safety, Ionic Wind, EPS Fire Suppression</p>
+        <!-- 필요시 경력/학력 항목 추가 -->
+      </div>
+    </div>
+  </main>
+
+  <!-- 푸터(고정) -->
+  <footer>
+    <hr>
+    <div class="footer-center">
+      <p>Address: (49112) 부산광역시 영도구 태종로 727 (동삼동) 한국해양대학교</p>
+      <p>Contact: <a href="mailto:shy@kmou.ac.kr">shy@kmou.ac.kr</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
