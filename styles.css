@@ -11,7 +11,7 @@ header {
   justify-content: space-between;
   background: linear-gradient(to left, #1e90ff, #87cefa);
   color: white;
-  padding: 10px 40px;
+  padding: 10px 30px;
 }
 
 header .logo img {
@@ -22,7 +22,7 @@ header .logo img {
 header h1 {
   flex: 1;
   text-align: center;
-  font-size: 2em; /* 글자 크기 2배 */
+  font-size: 3em; /* 글자 크기 2배 */
   color: #000066;
 }
 
