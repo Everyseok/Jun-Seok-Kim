@@ -1,4 +1,4 @@
-// 슬라이드가 있는 페이지(index.html)에서만 동작하도록 가드
+// 슬라이드 자동 전환 (index.html에서만 동작)
 (function () {
   const slides = document.querySelectorAll(".slide");
   if (!slides || slides.length === 0) return;
