@@ -161,7 +161,9 @@ footer hr {
 }
 
 /* ----- Members 드롭다운 ----- */
-.dropdown { position: relative; }
+.dropdown {
+  position: relative;
+}
 
 .menu-title {
   margin: 20px;
@@ -172,28 +174,42 @@ footer hr {
   display: block;
   text-align: left;
   color: #222;
-  cursor: default; /* 클릭 불가 느낌 */
+  cursor: default;
   user-select: none;
 }
 
-/* 서브메뉴 기본 숨김 */
+/* 스르륵 펼쳐지는 효과 */
 .submenu {
-  display: none;
+  max-height: 0;             /* 처음엔 닫힘 */
+  overflow: hidden;
+  display: flex;
   flex-direction: column;
   margin-left: 20px;
+  transition: max-height 0.4s ease;  /* 부드러운 전환 */
 }
 
-/* hover 시 펼침 */
-.dropdown:hover .submenu { display: flex; }
+.dropdown:hover .submenu {
+  max-height: 500px;         /* 펼쳐질 때 높이 (충분히 크게 지정) */
+}
 
 /* 서브메뉴 항목 */
 .submenu a {
   margin: 8px 0;
-  font-size: 1.1em;    /* 조금 더 작게 */
-  color: #555;         /* 연한 색 */
-  font-weight: normal;
+  font-size: 1.1em;
+  color: #555;
   text-decoration: none;
+  font-weight: normal;
   border: none;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.submenu a:hover { color: #007bff; }
+.dropdown:hover .submenu a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.submenu a:hover {
+  color: #007bff;
+}
