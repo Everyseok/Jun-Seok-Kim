@@ -27,16 +27,17 @@ body {
 }
 
 .logo {
-  height: 60px;  /* 상단바 높이에 맞춤 */
+  height: 60px;   /* 상단바 높이에 맞춤 */
   margin-right: 10px;
-  object-fit: contain;
+  object-fit: contain; /* 비율 유지 */
 }
 
 .lab-name {
   flex: 1;
   text-align: center;
-  font-size: 2em; /* 기존 대비 2배 */
+  font-size: 2em; /* 글자 크기 2배 */
   color: #000066;
+  white-space: nowrap;
 }
 
 .top-nav a {
@@ -48,17 +49,17 @@ body {
 
 /* 좌측 메뉴 (고정) */
 .side-menu {
-  position: fixed;       /* 스크롤 내려도 항상 고정 */
-  top: 120px;            /* 상단바 밑에서 시작 */
+  position: fixed;
+  top: 120px;  /* 상단바 밑 */
   left: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .side-menu a {
-  font-size: 2em; /* 글자 크기 키움 */
-  margin: 20px 0; /* 위아래 간격 넓힘 */
-  padding-left: 10px; /* 왼쪽에서 살짝 띄움 */
+  font-size: 2em; /* 글자 크게 */
+  margin: 20px 0;
+  padding-left: 10px;
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -66,8 +67,8 @@ body {
 
 /* 메인 */
 main {
-  flex: 1; /* footer를 바닥에 밀착시키기 위해 main이 남은 공간 채움 */
-  margin-left: 250px; /* 사이드 메뉴 공간 확보 */
+  flex: 1;
+  margin-left: 250px; /* 사이드 메뉴 공간 */
   padding: 20px;
 }
 
@@ -84,8 +85,8 @@ main {
   display: none;
   width: auto;
   max-width: 100%;
-  max-height: 66%;   /* 원래 높이의 2/3로 줄임 */
-  object-fit: contain; /* 비율 유지하면서 안 깨짐 */
+  max-height: 66%;   /* 원본 높이의 2/3 */
+  object-fit: contain; /* 화질 유지 */
 }
 
 .slideshow img.active {
@@ -102,7 +103,7 @@ main {
 /* 푸터 */
 footer {
   text-align: center;
-  margin-top: auto; /* 항상 페이지 맨 아래로 밀기 */
+  margin-top: auto;
   padding: 20px 0;
 }
 footer hr {
