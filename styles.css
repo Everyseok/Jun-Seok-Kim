@@ -29,7 +29,7 @@ body {
 .lab-name {
   flex: 1;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em; /* 글자 크기임 랩네임 ㅇㅇ */
   font-weight: bold;
   color: #00134d;
 }
@@ -89,7 +89,7 @@ main {
 .slide {
   display: none;
   width: auto;
-  height: 260px; /* 슬라이드 정상 크기 */
+  height: 300px; /* 슬라이드 정상 크기 */
   object-fit: contain;
   margin: 0 auto;
 }
