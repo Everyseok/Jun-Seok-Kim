@@ -1,12 +1,19 @@
-let slides = document.querySelectorAll(".slide");
-let index = 0;
+// 슬라이드 자동재생
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
 
-function showSlide() {
+function showSlide(index) {
   slides.forEach((slide, i) => {
-    slide.classList.remove("active");
-    if (i === index) slide.classList.add("active");
+    slide.classList.remove('active');
+    if (i === index) {
+      slide.classList.add('active');
+    }
   });
-  index = (index + 1) % slides.length;
 }
 
-setInterval(showSlide, 2000); // 2초 간격
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}
+
+setInterval(nextSlide, 2000); // 2초 간격
