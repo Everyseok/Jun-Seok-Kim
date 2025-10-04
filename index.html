@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>우리 연구실</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LCTC Lab</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>안녕하세요 👋 우리 연구실 홈페이지입니다!</h1>
-  <p>연구실 소개, 멤버, 논문, 연락처 등을 여기에 추가할 수 있습니다.</p>
+  <!-- 상단바 -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <img src="images/kmou_logo.png" alt="KMOU 로고" class="logo">
+      <img src="images/lctc_logo.png" alt="LCTC 로고" class="logo">
+    </div>
+    <h1 class="lab-title">Lab of Combustion and Technology Convergence</h1>
+    <nav class="topbar-right">
+      <a href="#home">Home</a>
+      <a href="#login">Login</a>
+      <a href="#join">Join a lab</a>
+    </nav>
+  </header>
+
+  <!-- 왼쪽 사이드 메뉴 -->
+  <aside class="sidebar">
+    <a href="#about">About</a>
+    <a href="#members">Members</a>
+    <a href="#research">Research</a>
+    <a href="#board">Board</a>
+  </aside>
+
+  <!-- 메인 콘텐츠 -->
+  <main>
+    <!-- 슬라이드 배너 -->
+    <section id="home" class="hero">
+      <div class="slideshow">
+        <img src="images/slide1.jpg" class="slide active" alt="Slide 1">
+        <img src="images/slide2.jpg" class="slide" alt="Slide 2">
+        <img src="images/slide3.jpg" class="slide" alt="Slide 3">
+        <img src="images/slide4.jpg" class="slide" alt="Slide 4">
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>연구실 소개 문구가 여기에 들어갑니다.</p>
+    </section>
+
+    <!-- Members -->
+    <section id="members" class="section">
+      <h2>Members</h2>
+      <p>교수님, 대학원생, 학부생 소개</p>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <p>EPS 화재, 이온풍, H₂/CH₄ 화염 연구 등</p>
+    </section>
+
+    <!-- Board -->
+    <section id="board" class="section">
+      <h2>Board</h2>
+      <p>공지사항, 세미나 일정, 자료실</p>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <hr>
+    <p>Address: (49112) 부산광역시 영도구 태종로 727 (동삼동) 한국해양대학교</p>
+    <p>Contact: <a href="mailto:shy@kmou.ac.kr">shy@kmou.ac.kr</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
