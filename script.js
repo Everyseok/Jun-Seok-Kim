@@ -13,4 +13,4 @@ function nextSlide() {
   showSlide(currentIndex);
 }
 
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 3000); // 3초마다 슬라이드 전환
