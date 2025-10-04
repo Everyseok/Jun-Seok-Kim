@@ -165,42 +165,35 @@ footer hr {
 
 .menu-title {
   margin: 20px;
-  font-size: 1.3em;       /* 사이드메뉴 기본과 동일 크기 */
+  font-size: 1.3em;
   font-weight: bold;
   padding-bottom: 8px;
   border-bottom: 2px solid black;
   display: block;
   text-align: left;
   color: #222;
-  cursor: default;        /* 클릭 불가 느낌 */
+  cursor: default; /* 클릭 불가 느낌 */
   user-select: none;
 }
 
-/* 서브메뉴: 기본 숨김, hover 시 펼침 */
+/* 서브메뉴 기본 숨김 */
 .submenu {
   display: none;
   flex-direction: column;
-  margin: 8px 0 0 20px;   /* 왼쪽 들여쓰기 */
+  margin-left: 20px;
 }
 
+/* hover 시 펼침 */
 .dropdown:hover .submenu { display: flex; }
 
-/* 서브메뉴 항목: 더 작고 연한 색 */
+/* 서브메뉴 항목 */
 .submenu a {
   margin: 8px 0;
-  font-size: 1.1em;       /* Members보다 작게 */
-  color: #555;            /* 연한 색 */
-  text-decoration: none;
+  font-size: 1.1em;    /* 조금 더 작게 */
+  color: #555;         /* 연한 색 */
   font-weight: normal;
-  border: none;           /* 서브메뉴는 밑줄 선 없음 */
+  text-decoration: none;
+  border: none;
 }
 
 .submenu a:hover { color: #007bff; }
-
-/* 페이지 내부 섹션 제목(조금 크게) & 검정 실선 */
-.page-title { font-size: 2rem; margin: 0; }
-.section-hr {
-  border: 0;
-  border-top: 2px solid #000;
-  margin: 10px 0 20px;
-}
