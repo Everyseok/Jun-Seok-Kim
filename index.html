@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LCTC Lab</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- 상단바 -->
-  <header class="topbar">
-    <div class="topbar-left">
+  <header class="navbar">
+    <div class="logo-area">
       <img src="images/KMOU_logo.png" alt="KMOU 로고" class="logo">
       <img src="images/LCTC_logo.png" alt="LCTC 로고" class="logo">
+      <h1 class="lab-name">Lab of Combustion and Technology Convergence</h1>
     </div>
-    <h1 class="lab-title">Lab of Combustion and Technology Convergence</h1>
-    <nav class="topbar-right">
-      <a href="#home">Home</a>
-      <a href="#login">Login</a>
-      <a href="#join">Join a lab</a>
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Join a lab</a>
     </nav>
   </header>
 
-  <!-- 왼쪽 사이드 메뉴 -->
-  <aside class="sidebar">
-    <a href="#about">About</a>
-    <a href="#members">Members</a>
-    <a href="#research">Research</a>
-    <a href="#board">Board</a>
+  <!-- 좌측 메뉴 -->
+  <aside class="side-menu">
+    <a href="about.html">About</a>
+    <a href="members.html">Members</a>
+    <a href="research.html">Research</a>
+    <a href="board.html">Board</a>
   </aside>
 
-  <!-- 메인 콘텐츠 -->
+  <!-- 메인 컨텐츠 -->
   <main>
-    <!-- 슬라이드 배너 -->
-    <section id="home" class="hero">
+    <section class="hero">
       <div class="slideshow">
         <img src="images/1.png" class="slide active" alt="Slide 1">
         <img src="images/2.png" class="slide" alt="Slide 2">
@@ -40,34 +39,10 @@
         <img src="images/4.png" class="slide" alt="Slide 4">
       </div>
     </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>연구실 소개 문구가 여기에 들어갑니다.</p>
-    </section>
-
-    <!-- Members -->
-    <section id="members" class="section">
-      <h2>Members</h2>
-      <p>교수님, 대학원생, 학부생 소개</p>
-    </section>
-
-    <!-- Research -->
-    <section id="research" class="section">
-      <h2>Research</h2>
-      <p>화재 억제를 위한 건축물에 사용되는 여러 단열재들은 화재 발생 시 다량의 CO와 CO2가 발생하며...</p>
-    </section>
-
-    <!-- Board -->
-    <section id="board" class="section">
-      <h2>Board</h2>
-      <p>공지사항, 세미나 일정, 자료실</p>
-    </section>
   </main>
 
-  <!-- 푸터 -->
-  <footer class="footer">
+  <!-- 하단 -->
+  <footer>
     <hr>
     <p>Address: (49112) 부산광역시 영도구 태종로 727 (동삼동) 한국해양대학교</p>
     <p>Contact: <a href="mailto:shy@kmou.ac.kr">shy@kmou.ac.kr</a></p>
