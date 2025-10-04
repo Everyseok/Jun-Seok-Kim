@@ -1,12 +1,111 @@
-let slides = document.querySelectorAll(".slide");
-let index = 0;
-
-function showSlide() {
-  slides.forEach((slide, i) => {
-    slide.classList.remove("active");
-    if (i === index) slide.classList.add("active");
-  });
-  index = (index + 1) % slides.length;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
 }
 
-setInterval(showSlide, 2000); // 2초 간격
+/* 상단바 */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  background: linear-gradient(to right, #000099, #0000ff, #ffffff); /* 푸른색 → 흰색 진한 그라데이션 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+.topbar-left .logo {
+  height: 65px;
+  margin-right: 10px;
+}
+
+.lab-title {
+  font-size: 36px; /* 2배 크기 */
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+  color: navy;
+}
+
+.topbar-right a {
+  margin-left: 20px;
+  color: white; /* 흰색 글자 */
+  font-weight: bold;
+  text-decoration: none;
+}
+.topbar-right a:hover {
+  text-decoration: underline;
+}
+
+/* 사이드바 */
+.sidebar {
+  position: fixed;
+  top: 110px;
+  left: 0;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.sidebar a {
+  margin: 15px 0;
+  color: black;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  font-weight: bold;
+}
+
+/* 메인 영역 */
+main {
+  margin-left: 140px;
+  margin-top: 120px;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* 슬라이드쇼 */
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 320px;
+  overflow: hidden;
+  margin: auto;
+  border: 2px solid #004080;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.slide.active {
+  opacity: 1;
+}
+
+/* 섹션 */
+.section {
+  margin: 80px 0;
+}
+
+/* 푸터 */
+.footer {
+  text-align: center;
+  padding: 20px;
+}
+.footer hr {
+  border: 1px solid black;
+  margin: 20px 0;
+}
