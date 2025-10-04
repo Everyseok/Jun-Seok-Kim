@@ -1,13 +1,10 @@
-// 슬라이드 자동재생
 let currentIndex = 0;
-const slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll(".slide");
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    if (i === index) {
-      slide.classList.add('active');
-    }
+    slide.classList.remove("active");
+    if (i === index) slide.classList.add("active");
   });
 }
 
@@ -16,4 +13,4 @@ function nextSlide() {
   showSlide(currentIndex);
 }
 
-setInterval(nextSlide, 2000); // 2초 간격
+setInterval(nextSlide, 3000);
