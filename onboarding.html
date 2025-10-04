@@ -3,10 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LCTC Lab - On boarding</title>
+  <title>LCTC Lab - On boarding Students</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .profile-info h4 { margin: 6px 0 8px; font-weight: 600; }
+    .kv { margin: 2px 0; }
+    .kv b { display:inline-block; min-width: 110px; }
+    .tags { margin-top: 6px; }
+    .tag {
+      display: inline-block; padding: 2px 8px; margin: 2px 6px 0 0;
+      border: 1px solid #bbb; border-radius: 12px; font-size: 0.9em; background:#fff;
+    }
+  </style>
 </head>
 <body>
+  <!-- 상단바 -->
   <header class="navbar">
     <div class="logo-area">
       <img src="images/KMOU_logo.png" alt="KMOU 로고" class="logo">
@@ -20,6 +31,7 @@
     </nav>
   </header>
 
+  <!-- 좌측 메뉴 -->
   <aside class="side-menu">
     <a href="about.html">About</a>
     <div class="dropdown">
@@ -35,22 +47,52 @@
     <a href="board.html">Board</a>
   </aside>
 
+  <!-- 메인 -->
   <main>
     <h2 class="page-title">On boarding Students</h2>
     <hr class="section-hr">
 
     <div class="member-list">
+      <!-- KYM -->
       <div class="profile-card">
         <img src="images/KYM.png" class="profile-photo" alt="KYM">
-        <div class="profile-info"><h3>KYM</h3><p>On boarding Student</p></div>
+        <div class="profile-info">
+          <h3>김영민 (KYM)</h3>
+          <h4>M.S. Student (on leave), Dept. of Marine System Engineering, KMOU</h4>
+          <p class="kv"><b>Email</b> : <a href="mailto:kymin99@g.kmou.ac.kr">kymin99@g.kmou.ac.kr</a></p>
+          <p class="kv"><b>Education</b> :</p>
+          <ul>
+            <li>2023 B.S., Dept. of Marine System Engineering, KMOU</li>
+          </ul>
+          <p class="kv"><b>Research Areas</b> :</p>
+          <div class="tags">
+            <span class="tag">Plasma</span>
+            <span class="tag">Laminar flame</span>
+          </div>
+        </div>
       </div>
+
+      <!-- YSY -->
       <div class="profile-card">
         <img src="images/YSY.png" class="profile-photo" alt="YSY">
-        <div class="profile-info"><h3>YSY</h3><p>On boarding Student</p></div>
+        <div class="profile-info">
+          <h3>유시영 (YSY)</h3>
+          <h4>M.S. Student (on leave), Dept. of Marine System Engineering, KMOU</h4>
+          <p class="kv"><b>Email</b> : <a href="mailto:siyoung0113@g.kmou.ac.kr">siyoung0113@g.kmou.ac.kr</a></p>
+          <p class="kv"><b>Education</b> :</p>
+          <ul>
+            <li>2024 B.S., Dept. of Marine System Engineering, KMOU</li>
+          </ul>
+          <p class="kv"><b>Research Areas</b> :</p>
+          <div class="tags">
+            <span class="tag">Cellular flame instability</span>
+          </div>
+        </div>
       </div>
     </div>
   </main>
 
+  <!-- 푸터 -->
   <footer>
     <hr>
     <div class="footer-center">
