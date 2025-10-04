@@ -89,7 +89,7 @@ main {
 .slide {
   display: none;
   width: auto;
-  height: 500px; /* 슬라이드 정상 크기 */
+  height: 540px; /* 슬라이드 정상 크기 */
   object-fit: contain;
   margin: 0 auto;
 }
