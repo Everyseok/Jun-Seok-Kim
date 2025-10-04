@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  display: flex;
 }
 
 /* 상단바 */
@@ -65,8 +64,8 @@ body {
 main {
   margin-left: 140px;
   margin-top: 120px;
-  flex-grow: 1;
   padding: 20px;
+  min-height: 70vh; /* 본문이 짧아도 footer가 아래로 밀리게 */
 }
 
 /* 슬라이드쇼 */
@@ -100,9 +99,9 @@ main {
 .footer {
   text-align: center;
   padding: 20px;
-  margin-top: 80px;
+  background: #fff;
 }
 .footer hr {
-  border: 1px solid black; /* 깔끔한 검은색 줄 */
+  border: 1px solid black; /* 검은 줄 */
   margin: 20px 0;
 }
