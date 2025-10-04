@@ -73,7 +73,7 @@ header nav a {
   display: none;
   width: auto;
   max-width: 100%;
-  height: 36vh;       /* 브라우저 높이의 2/3 */
+  height: 66vh;       /* 브라우저 높이의 2/3 */
   object-fit: contain; /* 비율 유지 + 잘리지 않음 */
   margin: 0 auto;
 }
