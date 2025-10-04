@@ -213,3 +213,100 @@ footer hr {
 .submenu a:hover {
   color: #007bff;
 }
+
+/* ----- 반응형 레이아웃 (아이폰 포함) ----- */
+@media screen and (max-width: 768px) {
+  /* 상단바: 로고와 랩네임 세로 배치 */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo-area {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .lab-name {
+    font-size: 1.6em; /* 모바일에서는 줄여줌 */
+  }
+
+  .top-nav {
+    margin-top: 8px;
+  }
+  .top-nav a {
+    margin: 0 10px;
+    font-size: 0.9em;
+  }
+
+  /* 사이드메뉴: 왼쪽 고정 → 상단 드롭다운으로 변경 */
+  .side-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .side-menu a,
+  .menu-title {
+    margin: 0;
+    font-size: 1em;
+    border: none;
+    padding: 5px 10px;
+  }
+
+  /* 드롭다운 (Members) 모바일용 */
+  .submenu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .submenu a {
+    padding: 10px;
+    font-size: 0.95em;
+  }
+
+  /* 메인 컨텐츠 */
+  main {
+    margin-left: 0; /* 사이드메뉴 없애고 전체폭 사용 */
+    padding: 15px;
+  }
+
+  /* 슬라이드 이미지 크기 축소 */
+  .slideshow {
+    max-width: 100%;
+  }
+
+  .slide {
+    height: 240px; /* 모바일에서 높이 줄임 */
+  }
+
+  /* 멤버 카드 */
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-photo {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 120px;
+    height: 150px;
+  }
+}
