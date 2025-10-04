@@ -11,9 +11,9 @@ body, html {
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
-  background: linear-gradient(to left, #1a73e8, #99ccff); /* 반대로 */
+  background: linear-gradient(to left, #1a73e8, #99ccff);
   color: white;
-  height: 90px; /* 고정 높이 */
+  height: 90px;
 }
 
 .logo-area {
@@ -22,13 +22,13 @@ body, html {
 }
 
 .logo {
-  height: 70px;   /* 상단바 높이에 맞추기 */
-  width: auto;    /* 비율 유지 */
+  height: 70px;
+  width: auto;
   margin-right: 10px;
 }
 
 .lab-name {
-  font-size: 2.5rem; /* 2배 키우기 */
+  font-size: 2.5rem;
   font-weight: bold;
   color: #000066;
   text-align: center;
@@ -46,16 +46,16 @@ body, html {
 .side-menu {
   position: fixed;
   top: 130px;
-  left: 30px; /* 오른쪽으로 살짝 이동 */
+  left: 30px;
   display: flex;
   flex-direction: column;
 }
 
 .side-menu a {
-  margin: 25px 0;       /* 위아래 간격 넓히기 */
+  margin: 25px 0;
   text-decoration: none;
   color: black;
-  font-size: 2rem;      /* 글자 3배 키우기 */
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -69,16 +69,17 @@ body, html {
   width: 90%;
   max-width: 1000px;
   margin: 50px auto;
-  overflow: hidden;
-  border: 2px solid #004080;
   text-align: center;
 }
 
 .slide {
   display: none;
-  max-height: 500px; /* 높이만 고정 */
-  width: auto;       /* 비율 유지 */
-  margin: auto;      /* 중앙 정렬 */
+  max-width: 100%;
+  max-height: 600px;   /* 높이 제한 */
+  width: auto;
+  height: auto;
+  object-fit: contain; /* 비율 유지 + 화질 그대로 */
+  margin: auto;
 }
 
 .slide.active {
@@ -87,7 +88,7 @@ body, html {
 
 /* 본문 */
 main {
-  margin-left: 180px; /* 메뉴 공간 확보 */
+  margin-left: 180px;
   padding: 20px;
 }
 
