@@ -79,7 +79,7 @@ body, html {
 
 .slide {
   display: none;
-  max-height: 650px; /* 가장 큰 사진 높이에 맞춤 */
+  max-height: 650px; /* 기준 높이 고정 */
   width: auto;
   height: auto;
   object-fit: contain; /* 비율 유지 */
