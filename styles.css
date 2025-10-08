@@ -376,10 +376,3 @@ footer hr {
   border-radius: 8px;
 }
 
-/* reimg4 전용 크기 조정 */
-.special-size img {
-  width: 40%;        /* ← 기본은 80%, 줄이고 싶으면 이 값 조정 */
-  max-width: 500px;  /* ← 너무 커지지 않게 제한 */
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
