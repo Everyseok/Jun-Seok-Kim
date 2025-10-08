@@ -5,6 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research Field | LCTC</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* 이미지 중앙 정렬 및 병렬 조합용 추가 스타일 */
+    .img-center {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .img-center img {
+      width: 80%;
+      max-width: 800px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    /* 병렬 이미지 컨테이너 */
+    .img-pair {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin: 25px 0;
+    }
+
+    .img-pair img {
+      width: 45%;
+      max-width: 480px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+  </style>
 </head>
 <body>
   <!-- 상단바 -->
@@ -52,33 +85,34 @@
 
     <section class="about-lab-section">
       <div class="about-text">
-        <!-- ✅ 수정된 첫 문단 -->
         <p>
           The <strong>Lab of Combustion and Technology Convergence (LCTC)</strong> is engaged in a wide spectrum of combustion and fire-safety research, 
           <strong>focusing on advancing energy-conversion efficiency</strong>. 
           Our work bridges fundamental combustion science with applied engineering to realize safer, cleaner, and more efficient systems.
         </p>
 
-        <!-- ✅ 수정된 두 번째 문단 (In fire-safety research, a key topic is...) -->
         <p>
           <strong>In fire-safety research, a key topic is</strong> the mitigation of lithium-ion battery explosions and fires. 
           Through controlled thermal-runaway experiments and electric-field-assisted suppression techniques, 
           we aim to understand ignition mechanisms and establish rapid extinguishing methods applicable to electric vehicles and ESS systems.
         </p>
 
-        <div class="img-center">
-          <img src="images/reimg1.png" alt="Battery Fire Suppression Experiment" />
+        <!-- ✅ reimg1 & reimg1_1 (병렬 이미지) -->
+        <div class="img-pair">
+          <img src="images/reimg1.png" alt="Battery Fire Suppression Experiment 1" />
+          <img src="images/reimg1_1.png" alt="Battery Fire Suppression Experiment 2" />
         </div>
 
-        <!-- 나머지는 기존 내용 그대로 -->
         <p>
           Another core topic is the <strong>control of combustion instability and flashback prevention in gas turbines</strong>. 
           The laboratory explores thermoacoustic interactions and flame dynamics under lean combustion with applied electric fields 
           to achieve high efficiency and stability in energy systems.
         </p>
 
-        <div class="img-center">
-          <img src="images/reimg2.png" alt="Gas Turbine Flame Experiment" />
+        <!-- ✅ reimg2 & reimg2_1 (병렬 이미지) -->
+        <div class="img-pair">
+          <img src="images/reimg2.png" alt="Gas Turbine Flame Experiment 1" />
+          <img src="images/reimg2_1.png" alt="Gas Turbine Flame Experiment 2" />
         </div>
 
         <p>
@@ -86,6 +120,7 @@
           Experimental and computational approaches are combined to reduce greenhouse gas emissions through optimized thermal processes.
         </p>
 
+        <!-- ✅ reimg3 (단일 이미지) -->
         <div class="img-center">
           <img src="images/reimg3.png" alt="N2O Pyrolysis Reactor" />
         </div>
@@ -96,6 +131,7 @@
           Experiments explore plasma-assisted and catalytic reactions to enhance fuel conversion and efficiency.
         </p>
 
+        <!-- ✅ reimg4 (단일 이미지) -->
         <div class="img-center">
           <img src="images/reimg4.png" alt="Ammonia and LNG Reforming Setup" />
         </div>
@@ -104,10 +140,6 @@
           Lastly, the laboratory develops <strong>plasma-assisted combustion technologies</strong> for flame stabilization, ignition enhancement, 
           and pollutant reduction in low-temperature conditions, integrating plasma physics, electrical diagnostics, and reaction kinetics.
         </p>
-
-        <div class="img-center">
-          <img src="images/reimg5.png" alt="Plasma-Assisted Combustion Experiment" />
-        </div>
 
         <h3>Experimental Facilities and Software</h3>
         <p>
