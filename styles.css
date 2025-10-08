@@ -369,7 +369,7 @@ footer hr {
 }
 
 .img-center img {
-  width: 80%;
+  width: 50%;
   max-width: 800px;
   height: auto;
   border: 1px solid #ccc;
@@ -378,7 +378,7 @@ footer hr {
 
 /* reimg4 전용 크기 조정 */
 .special-size img {
-  width: 65%;        /* ← 기본은 80%, 줄이고 싶으면 이 값 조정 */
+  width: 40%;        /* ← 기본은 80%, 줄이고 싶으면 이 값 조정 */
   max-width: 500px;  /* ← 너무 커지지 않게 제한 */
   margin-top: 10px;
   margin-bottom: 10px;
